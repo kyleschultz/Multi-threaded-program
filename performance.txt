@@ -1,0 +1,57 @@
+Number for requester thread = 1
+Number for resolver thread = 1
+Total run time: 10 seconds
+Thread 112552 serviced 5 files.
+
+Number for requester thread = 3
+Number for resolver thread = 1
+Total run time: 8 seconds
+Thread 112681 serviced 3 files.
+Thread 112680 serviced 1 files.
+Thread 112679 serviced 2 files.
+
+Number for requester thread = 1
+Number for resolver thread = 3
+Total run time: 10 seconds
+Thread 112697 serviced 5 files.
+
+Number for requester thread = 3
+Number for resolver thread = 3
+Total run time: 9 seconds
+Thread 112712 serviced 1 files.
+Thread 112711 serviced 3 files.
+Thread 112713 serviced 1 files.
+
+Number for requester thread = 5
+Number for resolver thread = 5
+Total run time: 7 seconds
+Thread 112750 serviced 1 files.
+Thread 112751 serviced 1 files.
+Thread 112747 serviced 3 files.
+Thread 112749 serviced 1 files.
+Thread 112748 serviced 1 files.
+
+Number for requester thread = 8
+Number for resolver thread = 5
+Total run time: 7 seconds
+Thread 112796 serviced 1 files.
+Thread 112799 serviced 1 files.
+Thread 112798 serviced 1 files.
+Thread 112800 serviced 1 files.
+Thread 112795 serviced 1 files.
+Thread 112801 serviced 1 files.
+Thread 112794 serviced 3 files.
+Thread 112797 serviced 1 files.
+
+The performance of my program changes with the number of requester and resolver threads being used. The program runs faster
+when there are more threads of each type. This is shown in the performance.png graph where the time it takes to complete 
+the program decreases when there are more requester and resolver threads. The program takes the most time when there 
+is only one thread of each type, but the time to complete decreases when more threads are added.
+If there are more resolver threads than requester threads, however, then the program will have worse performance. 
+In the performance.png graph, the program takes the second longest when there are 9 resolver threads and 1 requester.
+This is because the resolver must wait to have items in the shared buffer to get the ip addresses. In general, the programs
+performance increases with the number of threads being used. 
+
+
+
+
